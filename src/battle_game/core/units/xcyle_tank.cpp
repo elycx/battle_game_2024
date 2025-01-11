@@ -146,14 +146,14 @@ void XcyleTank::Fire() {
             GenerateBullet<bullet::CannonBall>(
                 position_ + Rotate({0.0f, 1.2f}, turret_rotation_),
                 turret_rotation_, 3.34 * GetDamageScale(), velocity);
-            fire_count_down_ = 3 * kTickPerSecond;  // Fire interval 1 second.
+            fire_count_down_ = 3 * kTickPerSecond; 
         }
         else {
             auto velocity = Rotate(glm::vec2{0.0f, 30.0f}, turret_rotation_);
             GenerateBullet<bullet::CannonBall>(
                 position_ + Rotate({0.0f, 1.2f}, turret_rotation_),
                 turret_rotation_, 0.4 * GetDamageScale(), velocity);
-            fire_count_down_ = 0.3 * kTickPerSecond;  // Fire interval 1 second.
+            fire_count_down_ = 0.3 * kTickPerSecond; 
         }
       }
     }
