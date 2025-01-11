@@ -19,5 +19,6 @@ class XcyleTank : public Unit {
   float turret_rotation_{0.0f};
   uint32_t fire_count_down_{0};
   uint32_t mine_count_down_{0};
+  uint32_t type_{0};
 };
 }  // namespace battle_game::unit
